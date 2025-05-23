@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.omer.battleship.ui.GameScreenController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="400" prefHeight="300">
+
+    <Label text="⚓ Battleship – CONNECT SERVER"/>
+    <TextField fx:id="ipField"
+               promptText="Public IP (örn. 3.223.89.96)"
+               maxWidth="250"/>
+    <Button text="Bağlan"
+            fx:id="connectBtn"
+            onAction="#connect"/>
+    <Label fx:id="statusLabel" textFill="red"/>
+</VBox>

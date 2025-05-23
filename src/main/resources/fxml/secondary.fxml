@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.omer.battleship.ui.LoginScreenController"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="600" prefHeight="600">
+
+    <!-- Enter IP → Connect -->
+    <TextField fx:id="ipField"
+               text="3.223.89.96"
+               promptText="Server IP (e.g., 3.223.89.96)"
+               maxWidth="250"/>
+    <Button fx:id="connectBtn"
+            text="Connect"
+            onAction="#connect"/>
+
+    <!-- Player name & start -->
+    <TextField fx:id="nameField" promptText="Player name"/>
+    <Button fx:id="submitBtn" onAction="#submitName" text="Start Game"/>
+
+    <Label fx:id="statusLabel"/>
+</VBox>
